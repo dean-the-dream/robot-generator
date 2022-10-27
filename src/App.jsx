@@ -3,14 +3,14 @@ import {HeaderSection, RobotContainer} from './components'
 import { useState } from 'react';
 
 function App() {
-  const [robotList, setRobotList] = useState(["apple","tree", "elephant"])
+  const [robotList, setRobotList] = useState([])
   const handleAdd = (text) => {
 
     setRobotList([...robotList,text]);
 
   }
   const handleRemove = (text) => {
-    setRobotList(robotList.filter((item, index)=> text!==item ))
+    setRobotList(robotList.filter((item, index)=> text!==item[1]))
     
   }
 

@@ -1,4 +1,4 @@
-import RobotItem from "../RobotItem/RobotItem"
+import RobotItem from "../RobotItem/RobotItem.jsx"
 import "./RobotContainer.scss"
 
 const RobotContainer = ({robotList, handleRemove}) => {
@@ -8,7 +8,7 @@ const RobotContainer = ({robotList, handleRemove}) => {
     <div>
         <h3>Robot List</h3>
         <div className="container">
-            {robotList.map(text =><RobotItem handleRemove={handleRemove} text={text} />)
+            {robotList.map(text =><RobotItem handleRemove={handleRemove} text={text} key={text[1]}/>)
             }
         </div>
     </div>

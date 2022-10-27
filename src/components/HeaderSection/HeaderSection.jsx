@@ -4,7 +4,7 @@ const HeaderSection = ({handleAdd}) => {
     const handleClick = (e) => {
         e.preventDefault();
         const input = document.querySelector("input")
-        handleAdd(input.value)
+        handleAdd([input.value, new Date()])
         input.value = ""
     }
 
