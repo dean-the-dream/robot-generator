@@ -4,7 +4,10 @@ const HeaderSection = ({handleAdd}) => {
     const handleClick = (e) => {
         e.preventDefault();
         const input = document.querySelector("input")
-        handleAdd([input.value, new Date()])
+        let r = Math.floor(Math.random()*255)
+        let g = Math.floor(Math.random()*255)
+        let b = Math.floor(Math.random()*255) 
+        handleAdd([input.value, new Date(),[r,b,g]])
         input.value = ""
     }
 

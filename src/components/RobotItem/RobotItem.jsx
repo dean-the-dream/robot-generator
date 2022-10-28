@@ -1,24 +1,10 @@
-// import './RobotItem.scss'
-
-
-
 const RobotItem = ({handleRemove, text}) => {
-    
-    let r = Math.floor(Math.random()*255)
-    let g = Math.floor(Math.random()*255)
-    let b = Math.floor(Math.random()*255) 
-  
     let pic = `https://robohash.org/${text[0]}.png`
   return (
     <div className="outline" onClick={() => handleRemove(text[1])}
-    style={{backgroundColor: `rgb(${r},${g},${b}`}}>
+    style={{backgroundColor: `rgb(${text[2][0]},${text[2][1]},${text[2][2]}`}}>
         <img src={pic} alt="" />
-    </div>
-    // <RobotItemDiv className="outline" 
-    // onClick={() => handleRemove(text[1])}>
-    //     <img src={pic} alt="" />
-    // </RobotItemDiv>
-    
+    </div>   
   )
 }
 
