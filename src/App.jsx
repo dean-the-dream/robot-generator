@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      
     <HeaderSection handleAdd={handleAdd}/>
     <RobotContainer handleRemove={handleRemove} robotList={robotList}/>
     </div>

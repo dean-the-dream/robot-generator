@@ -1,4 +1,4 @@
-
+import "./HeaderSection.scss"
 
 const HeaderSection = ({handleAdd}) => {
     const handleClick = (e) => {
